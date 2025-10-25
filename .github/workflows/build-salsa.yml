@@ -1,4 +1,4 @@
-name: "Build Corne QWERTY"
+name: "Build Salsa Corne"
 on: workflow_dispatch
 jobs:
   build:
@@ -8,3 +8,5 @@ jobs:
       board: '["nice_nano_v2"]'
       shield: '["corne_left","corne_right"]'
       alphas: '["QWERTY"]'
+      kconfig: |
+        CONFIG_ZMK_KEYBOARD_NAME="Salsa"
